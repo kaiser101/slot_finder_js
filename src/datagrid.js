@@ -33,7 +33,7 @@ const columns = [
     field: "available_capacity_dose2",
     headerName: "Capacity",
     type: "number",
-    width: 40,
+    width: 80,
     editable: true,
   },
 ];

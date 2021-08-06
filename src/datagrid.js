@@ -4,7 +4,6 @@ import { DataGrid } from "@material-ui/data-grid";
 const axios = require("axios");
 const moment = require("moment");
 const R = require("ramda");
-const _ = require("lodash");
 
 const { compose, map, filter, sortWith, ascend, prop } = R;
 
@@ -47,15 +46,8 @@ const filter_session = (session) => {
 };
 
 const map_session = (session) => {
-  const {
-    center_id,
-    name,
-    address,
-    pincode,
-    date,
-    available_capacity_dose2,
-    slots,
-  } = session;
+  const { center_id, name, address, pincode, date, available_capacity_dose2 } =
+    session;
   return {
     id: center_id,
     name,
